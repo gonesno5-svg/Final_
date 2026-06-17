@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>名字</title>
+    <link rel="stylesheet" href="myStyle.css">
+    <script src="myScript.js"></script>
+    <link rel="shortcut icon" href="name3.fav.png" type="image/x-icon">
+    <img src="images/follower.png" id="mouse-follower" alt="마우스 추적 이미지">
+</head>
+<body>
+
+    <div class="scroll-viewport">
+        
+        <div class="scroll-top-bong">
+            <img src="images/bong.png" alt="상단 봉">
+        </div>
+
+        <div class="scroll-container">
+            
+            <section id="section-main" class="main-face-zone">
+                <div class="main-face-inner">
+                    <img src="images/hanja.png" class="hanja" alt="타이틀 배경">
+                    <div class="main-title-korean">자녀 이름에<br>쓸 한자를 고를 권리<br>국가가 막아야 할까</div>
+                    
+                    <div class="tag-menu-container">
+                        <div class="footer-mini-rect">
+                            <img src="images/title.png" class="footer-rect-bg" alt="배경">
+                            <a href="#section-prologue" class="rect-link"><span>사례</span></a>
+                        </div>
+                        <div class="footer-mini-rect">
+                            <img src="images/title.png" class="footer-rect-bg" alt="배경">
+                            <a href="#section-problem" class="rect-link"><span>문제</span></a>
+                        </div>
+                        <div class="footer-mini-rect">
+                            <img src="images/title.png" class="footer-rect-bg" alt="배경">
+                            <a href="#section-court" class="rect-link"><span>법원</span></a>
+                        </div>
+                        <div class="footer-mini-rect">
+                            <img src="images/title.png" class="footer-rect-bg" alt="배경">
+                            <a href="#section-conclusion" class="rect-link"><span>입장</span></a>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section id="section-prologue" class="scroll-section">
+                <div class="vertical-title-container">
+                    <img src="images/title.png" class="title-bg-img" alt="타이틀 배경">
+                    <div class="vertical-title-text">이런 일이 일어나고 있습니다</div>
+                </div>
+                
+                <div class="section-content-wrap prologue-text-box">
+                    <p class="quote">"딸아이에게 아름다운 이름을 지어주고 싶었을 뿐입니다..."</p>
+                    <p class="desc">2023년, 한 아버지가 딸의 이름에 '예쁠 래' 라는 한자를 넣어 출생신고를 하려다 거부를 당했습니다. 이 한자가 인명용 한자 목록에 없었기 때문입니다. 주민센터는 한자 '래' 대신 한글 '래'로만 이름을 기록했습니다.</p>
+                    <p class="desc">아버지 김씨는 이에 불복해 헌법재판소에 헌법소원을 제기했습니다 국가가 법으로 한자 목록을 제한해 그 자유를 침해하고 있다는 주장이었습니다</p>
+
+                    <div class="name-swap-box">
+                        <img src="images/hanja_2.png" class="hanja-rae-img" alt="예쁠 래 한자">
+                        <span class="hangul-rae-text">래</span>
+                    </div>
+                </div>
+                
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section id="section-problem" class="scroll-section">
+                <div class="vertical-title-container">
+                    <img src="images/title.png" class="title-bg-img" alt="타이틀 배경">
+                    <div class="vertical-title-text">왜 이 제도가 문제인가</div>
+                </div>
+                
+                <div class="section-content-wrap">
+                    <div class="problem-grid-layout">
+                        <div class="wooden-tag-box" onclick="openModal('문화·항렬 전통 단절', '각 글자마다 고유한 뜻을 담는 한자의 특성상, 목록 제한은 항렬자·가문 작명 전통을 훼손합니다.')">
+                            <img src="images/name1.png" class="tag-bg-img" alt="마패1">
+                            <span style="font-family: 'Shilla';">문화·항렬 <br>전통 단절</span>
+                        </div>
+                        <div class="wooden-tag-box" onclick="openModal('기술의 불투명성', '\'통상 사용되는 한자\'를 누가, 어떤 기준으로 정하는지 불명확합니다. 비슷한 뜻의 한자도 포함 여부가 일관되지 않습니다.')">
+                            <img src="images/name2.png" class="tag-bg-img" alt="마패2">
+                            <span style="font-family: 'Shilla';">기술의 <br>불투명성</span>
+                        </div>
+                        <div class="wooden-tag-box" onclick="openModal('행복추구권 침해', '부모가 자녀 이름을 짓는 행위는 헌법 제10조가 보장하는 기본권입니다. 국가가 한자 목록으로 제한하는 것은 과잉금지 원칙에 위배됩니다.')">
+                            <img src="images/name3.png" class="tag-bg-img" alt="마패3">
+                            <span style="font-family: 'Shilla';">행복추구권<br>침해</span>
+                        </div>
+                        <div class="wooden-tag-box" onclick="openModal('동명이인의 증가', '허용 한자가 좁을수록 선택지가 줄어 동명이인이 늘어납니다. 오히려 개인 식별 기능을 약화시키는 역효과입니다.')">
+                            <img src="images/name4.png" class="tag-bg-img" alt="마패4">
+                            <span style="font-family: 'Shilla';">동명이인의<br>증가</span>
+                        </div>
+                        <div class="wooden-tag-box" onclick="openModal('개명강요의 부당함', '나중에 추가되면 개명할 수 있다는 논리는 불필요한 행정 절차를 국민에게 전가하는 것입니다.')">
+                            <img src="images/name1.png" class="tag-bg-img" alt="마패5">
+                            <span style="font-family: 'Shilla';">개명강요<br>부당함</span>
+                        </div>
+                        <div class="wooden-tag-box" onclick="openModal('전산화 명분소멸', '제한의 이유였던 행정 전산화는 유니코드가 수만 자를 지원하는 지금 사실상 해소됐습니다. 1991년의 명분이 지금도 유효한지 재검토가 필요합니다.')">
+                            <img src="images/name6.png" class="tag-bg-img" alt="마패6">
+                            <span style="font-family: 'Shilla';">전산화<br>명분소멸</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="section-divider"></div>
+
+            <section id="section-court" class="scroll-section">
+                <div class="vertical-title-container">
+                    <img src="images/title.png" class="title-bg-img" alt="타이틀 배경">
+                    <div class="vertical-title-text">인명용 한자 제한자 기본권 침해</div>
+                </div>
+                
+                <div class="section-content-wrap">
+                    <div class="court-section-wrap">
+                        
+                        <div class="court-cards-container">
+                            <div class="court-text-group court-text-agree court-card-agree h3">
+                                <h3 style="font-family: 'Shilla';">합헌</h3>
+                                <div class="vote-bar-base">
+                                <div class="vote-bar-fill vote-bar-fill-agree" style="width: 44%;"></div>
+                            </div>
+                                
+                                <p>이름은 사회 구성원이 읽을 수 있어야 함</p>
+                                <p>한자 수가 방대해 범위 설정 필요하며,</p>
+                                <p>9,389자는 충분히 많다</p>
+                                <p>추후 개명 등 구제 수단 존재한다</p>
+                            </div>
+                            
+                            <div class="court-text-group court-text-disagree court-card-disagree h3">
+                                <h3 style="font-family: 'Shilla';">위헌</h3>
+                                <div class="vote-bar-base">
+                                <div class="vote-bar-fill vote-bar-fill-disagree" style="width: 56%;"></div>
+                            </div>
+                                
+                                <p>이름은 정체성 표현, 국가 개입 신중해야하며,</p>
+                                <p>전산화 이유는 현재 기술로 해소 가능하다</p>
+                                <p>선정 기준이 불명확해 자의적 제한이다.</p>
+                                <p>개명 강요는 불필요한 절차 부담된다</p>
+                            </div>
+                        </div>
+
+                        <div class="court-illustration">
+                            <img src="images/people.png" alt="재판관 대립 캐릭터 삽화">
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section id="section-conclusion" class="scroll-section">
+                <div class="vertical-title-container">
+                    <img src="images/title.png" class="title-bg-img" alt="타이틀 배경">
+                    <div class="vertical-title-text">우리의 입장</div>
+                </div>
+                
+                <div class="section-content-wrap conclusion-text-box">
+                    <div class="conclusion-flex-container">
+                        <div class="conclusion-text-side">
+                            <p class="text">행정 편의보다 개인의 자유가 먼저입니다</p>
+                            <p class="text">1991년 컴퓨터 시스템의 한계로 시작된 인명용 한자 제한은 기술이 비약적으로 발전한 지금도 관성적으로 유지되고 있습니다. 
+                                <br>헌재 재판관 9인 중 4인이 위헌이라고 했고, 대법원 스스로도 9차례나 목록을 확대해왔습니다. <br>이는 제한의 근거가 처음부터 완전하지 않았다는 방증입니다.</p>
+                            <p class="text">이름을 짓는 자유는 행복추구권의 핵심입니다. 인명용 한자 제한은 폐지하거나, 최소한 '자형과 음가가 확인되는 모든 한자'로 전면 확대해야 합니다.</p>
+                            <p class="text">저는 위헌이라고 생각합니다 여러분은 어떻게 생각하세요 위헌? 합헌?</p>
+                        </div>
+
+                        <div class="conclusion-mapae-side">
+                            <div class="mapae-tag-box" onclick="showStamp('unconstitutional')">
+                                <img src="images/name1.png" class="mapae-bg-img" alt="위헌 마패">
+                                <span style="font-family: 'Shilla';" class="mapae-text">위헌이다</span>
+                                <img src="images/stamp_unconstitutional.png" class="stamp-img" id="stamp-unconstitutional" alt="위헌 도장">
+                            </div>
+                            
+                            <div class="mapae-tag-box" onclick="showStamp('constitutional')">
+                                <img src="images/name2.png" class="mapae-bg-img" alt="합헌 마패">
+                                <span style="font-family: 'Shilla';" class="mapae-text">합헌이다</span>
+                                <img src="images/stamp_constitutional.png" class="stamp-img" id="stamp-constitutional" alt="합헌 도장">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <footer class="footer-zone">
+                <div class="tag-menu-container">
+                    <div class="footer-mini-rect">
+                        <img src="images/title.png" class="footer-rect-bg" alt="배경">
+                        <a href="#section-main" class="rect-link"><span>대문</span></a>
+                    </div>
+                    <div class="footer-mini-rect">
+                        <img src="images/title.png" class="footer-rect-bg" alt="배경">
+                        <a href="#section-prologue" class="rect-link"><span>사례</span></a>
+                    </div>
+                    <div class="footer-mini-rect">
+                        <img src="images/title.png" class="footer-rect-bg" alt="배경">
+                        <a href="#section-problem" class="rect-link"><span>문제</span></a>
+                    </div>
+                    <div class="footer-mini-rect">
+                        <img src="images/title.png" class="footer-rect-bg" alt="배경">
+                        <a href="#section-court" class="rect-link"><span>법원</span></a>
+                    </div>
+                    <div class="footer-mini-rect">
+                        <img src="images/title.png" class="footer-rect-bg" alt="배경">
+                        <a href="#section-conclusion" class="rect-link"><span>입장</span></a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p class="slogan">행정의 편의보다 개인의 자유가 먼저 입니다</p>
+                    <p>@2026 HKNU Digital Publishing1</p>
+                    <p>본 웹사이트는 한경대학교 디자인학과 2026년 디지털퍼블리싱1 수업에서 과제의 일환으로 디자인한 것입니다.</p>
+                    <p class="copyright">名字 | 2024820032 김수정 All rights reserved.</p>
+                </div>
+            </footer>
+    <div>
+        <div class="scroll-bottom-bong">
+            <img src="images/bong.png" alt="하단 봉">
+        </div>
+    </div>
+
+    <div id="mapaeModal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="modal-close-btn" onclick="closeModal()">✖</button>
+                <h2 id="modalTitle">제목</h2>
+                <p id="modalDesc">설명 내용이 들어갑니다.</p>
+            </div>
+        </div>
+
+</body>
+</html>
