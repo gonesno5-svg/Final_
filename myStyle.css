@@ -80,7 +80,7 @@ html, body {
 }
 
 .scroll-top-bong {
-    width: 1920px;
+    width: 100%;
     position: absolute; 
     top: 0;
     left: 50%; 
@@ -90,7 +90,7 @@ html, body {
 .scroll-top-bong img { width: 100%; display: block; }
 
 .scroll-bottom-bong {
-    width: 1920px;
+    width: 100%;
     position: fixed; 
     bottom: 0;
     left: 50%; 
@@ -101,7 +101,7 @@ html, body {
 
 
 .scroll-container {
-    width: 1920px;
+    width: 1420px;
     height: 100vh; 
     overflow-y: auto; 
     position: relative;
